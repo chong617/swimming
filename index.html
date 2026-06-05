@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Summer | Yoga & Swimming Experience</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#f5f9fc;
+color:#333;
+line-height:1.7;
+}
+
+.hero{ 
+    height:100vh; 
+    background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("img.png"); 
+    background-size:cover; 
+    background-position: center 20%; /* Controls position: center horizontally, moves image down vertically */
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    text-align:center; 
+    padding:20px; 
+    color:white; 
+}
+
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:4.5rem;
+margin-bottom:20px;
+font-weight:700;
+text-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+.hero p{
+font-size:1.4rem;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+margin:10px;
+transition:.3s;
+}
+
+.btn-primary{
+background:white;
+color:#0077cc;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+.btn-secondary{
+border:2px solid white;
+color:white;
+}
+
+.btn-secondary:hover{
+background:white;
+color:#0077cc;
+}
+
+.section{
+max-width:1200px;
+margin:auto;
+padding:90px 25px;
+}
+
+.section-title{
+text-align:center;
+font-size:2.8rem;
+margin-bottom:20px;
+color:#0077cc;
+}
+
+.trial-wrapper{
+position:relative;
+display:inline-block;
+}
+
+.gatech{
+position:absolute;
+bottom:75px;
+left:50%;
+transform:translateX(-50%);
+width:320px;
+
+background:white;
+color:#333;
+padding:12px 16px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+font-size:.95rem;
+line-height:1.5;
+text-align:center;
+
+opacity:0;
+visibility:hidden;
+transition:all .3s ease;
+
+z-index:100;
+}
+
+.gatech::after{
+content:"";
+position:absolute;
+top:100%;
+left:50%;
+transform:translateX(-50%);
+
+border-width:8px;
+border-style:solid;
+border-color:white transparent transparent transparent;
+}
+
+.trial-wrapper:hover .gatech{
+opacity:1;
+visibility:visible;
+}
+.section-subtitle{
+text-align:center;
+max-width:800px;
+margin:auto;
+margin-bottom:60px;
+font-size:1.15rem;
+color:#666;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+}
+
+.card{
+background:white;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:280px;
+object-fit:cover;
+}
+
+.card-content{
+padding:30px;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#0077cc;
+font-size:1.5rem;
+}
+
+.card p{
+color:#666;
+}
+
+.benefits{
+background:white;
+padding:90px 25px;
+}
+
+.benefit-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+max-width:1100px;
+margin:auto;
+}
+
+.benefit{
+background:#f7fbff;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+
+.benefit h4{
+margin-bottom:12px;
+color:#0077cc;
+}
+
+.cta{
+background:
+linear-gradient(135deg,#00b4db,#0083b0);
+color:white;
+padding:100px 25px;
+text-align:center;
+}
+
+.cta h2{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.cta p{
+max-width:700px;
+margin:auto;
+margin-bottom:35px;
+font-size:1.2rem;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
+}
+
+.hero p{
+font-size:1.1rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Flow Into Summer</h1>
+
+<p>
+Seasonal Yoga & Swimming Experience
+for Wellness, Strength and Balance
+</p>
+
+<div class="trial-wrapper">
+
+    <p class="gatech">
+    🐝 Georgia Tech students, faculty, and staff with a valid BuzzCard can enjoy
+    <strong>3 days of free trial classes</strong>.
+    </p>
+
+    <a href="phishing.html" class="btn btn-primary">
+Start Your Free Trial
+</a>
+
+<a href="phishing.html" class="btn btn-secondary">
+View Schedule
+</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="section">
+
+<h2 class="section-title">
+A Unique Wellness Journey
+</h2>
+
+<p class="section-subtitle">
+
+Escape the routine and reconnect with your body through our
+exclusive Yoga & Swimming Program.
+
+Designed for all fitness levels, this seasonal experience
+combines mindful movement, breathing techniques,
+and professional swimming instruction in a beautiful outdoor environment.
+
+</p>
+
+<div class="features">
+
+<div class="card">
+
+<img src="./swim_1.png" alt="Pool Yoga">
+
+<div class="card-content">
+
+<h3>Poolside Yoga Sessions</h3>
+
+<p>
+Improve flexibility, posture, balance and focus through
+guided yoga classes inspired by nature and movement.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="./swim_2.png" alt="Yoga Swim">
+
+<div class="card-content">
+
+<h3>Swimming & Strength</h3>
+
+<p>
+Build endurance, confidence and technique with expert-led
+swimming lessons designed for beginners and experienced swimmers alike.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BENEFITS -->
+
+<section class="benefits">
+
+<h2 class="section-title">
+Why Join This Season?
+</h2>
+
+<div class="benefit-grid">
+
+<div class="benefit">
+<h4>🧘 Better Flexibility</h4>
+<p>Enhance mobility and reduce muscle tension.</p>
+</div>
+
+<div class="benefit">
+<h4>🏊 Swimming Skills</h4>
+<p>Learn techniques that improve efficiency and confidence.</p>
+</div>
+
+<div class="benefit">
+<h4>💙 Stress Relief</h4>
+<p>Reconnect with yourself through movement and mindfulness.</p>
+</div>
+
+<div class="benefit">
+<h4>☀️ Healthy Lifestyle</h4>
+<p>Create habits that support long-term wellbeing.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Start Your Wellness Journey Today</h2>
+
+<p>
+
+Whether you want to improve fitness, learn swimming,
+or simply enjoy a healthier lifestyle,
+our Yoga & Swimming Experience is designed for you.
+
+</p>
+
+<a href="phishing.html" class="btn btn-primary">
+Reserve Your Spot
+</a>
+
+</section>
+
+<footer>
+
+© 2026 Flow Into Summer • Yoga • Swimming • Wellness
+
+</footer>
+
+</body>
+</html>  
